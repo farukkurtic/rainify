@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+}
+
+.sound-container {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Lato', sans-serif;
+
+}
+
+.sound-container h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.audio-player {
+
+  width: 20%;
+  margin: auto;
+  text-align: center;
+
+}
+
+.audio-player i {
+
+  font-size: 150px;
+  cursor: pointer;
+
+  margin: 10px; 
+  width: 100%;
+
+  color: gainsboro;
+
+}
+
+.slider {
+  width: 85%;
+  margin-bottom: 20px;
+}
+
+.sound-display {
+
+  width: 20%;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 2px solid gainsboro;
+  color: gainsboro;
+  filter: brightness(90%);
+  cursor: pointer;
+
+}
+
+.sound-display:hover {
+  filter: brightness(100%);
+}
+
+.animated-background {
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    
+    z-index: -1;
+
+    filter: brightness(75%);
+
+    object-fit: cover;
+
+}
+
+.download {
+  width: 100%;
+  position: relative;
+  background-color: red;
+}
+
+.button-div {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  
+  width: 100%;
+  text-align: center;
+
+}
+
+.button-div a {
+  text-decoration: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.button-div button {
+
+  padding: 5px 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.button-div button:hover {
+  filter: brightness(90%);
+}
+
+.button-icon {
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+.button-text {
+  color: white !important;
+  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+}
+
+.button-div button i {
+  color: white;
+}
+
+.choose-sound-text {
+  width: 100%;
+  text-align: center;
+
+  font-family: 'Lato', sans-serif;
+  color: gainsboro;
+  font-size: 20px;
+
+}
+
+.choose-sound-text i {
+  font-size: 100px;
+}
+
+.navbar {
+
+  position: fixed;
+  top: 0;
+
+  width: 95%;
+  text-align: right;
+
+  padding: 10px;
+
+}
+
+.navbar i {
+  color: white;
+  font-size: 25px;
+  margin: 10px 15px;
+}
+
+
+/* responsive */
+
+/* ---------------------------------------------------------------------------- */
+
+/* laptops */
+
+@media (min-width: 1280px) and (max-width: 1680px) {
+  
+
+  .audio-player {
+    width: 30%;
+  }
+
+  .home-div i {
+    font-size: 70px;
+  }
+
+  .sound-display {
+    margin-bottom: 100px;
+  }
+}
+
+
+
+/* regular phones */
+
+@media (max-width: 576px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .sound-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sound-display {
+    width: 60%;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .sound-display h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .sound-display h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .choose-sound-text {
+    font-size: 17px;
+  }
+
+  .home-div i {
+    font-size: 60px;
+    margin-top: 330px;
+  }
+
+  .animated-background {
+    height: 100%;
+  }
+
+  .navbar {
+    position: absolute;
+    text-align: center;
+  }
+
+  .navbar i {
+    font-size: 30px;
+  }
+
+  .button-div {
+    position: unset;
+    margin-top: 70px;
+  }
+
+  .audio-player {
+    width: 100%;
+  }
+
+  .slider {
+    width: 60%;
+  }
+
+}
+
+/* smaller phones */
+
+@media (max-width: 375px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .sound-container {
+    flex-direction: column;
+  }
+
+  .home-div i {
+    margin-top: 450px;
+  }
+
+  .navbar {
+    width: 90%;
+    text-align: center;
+  }
+
+}
+
+/* regular tablets */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .animated-background {
+    height: 100%;
+  }
+
+  .sound-container {
+    flex-direction: row;
+  }
+
+  .navbar i {
+    font-size: 40px;
+  }
+
+  .sound-display h1 {
+    font-size: 25px;
+  }
+
+  .sound-display h3 {
+    font-size: 15px;
+  }
+}
+
+/* landscape mode */
+
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+  
+}
+
