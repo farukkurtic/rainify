@@ -319,6 +319,10 @@ body {
   .sound-display h3 {
     font-size: 15px;
   }
+
+  .audio-player {
+    width: 40%
+  }
 }
 
 /* landscape mode */
