@@ -1,6 +1,6 @@
 # Rainify
 
-Rainify is a web application that provides users with a seamless and immersive rain sounds experience, allowing them to relax and focus while enjoying soothing rain sounds. The app offers a variety of rain sounds and backgrounds to choose from, ensuring users find the perfect ambiance to suit their preferences.
+Rainify is a web application that provides users with a seamless and immersive rain sounds experience, allowing them to relax and focus while enjoying soothing sounds. The app offers a variety of rain sounds and backgrounds to choose from, ensuring users find the perfect ambiance to suit their preferences.
 
 ## Table of Contents
 
@@ -9,6 +9,7 @@ Rainify is a web application that provides users with a seamless and immersive r
   - [Frontend](#frontend)
   - [Backend](#backend)
 - [Getting Started](#getting-started)
+- [Demo](#demo)
 - [Future Plans](#future-plans)
 
 ## Features
@@ -32,15 +33,19 @@ Rainify is a web application that provides users with a seamless and immersive r
 ## Getting Started
 
 1. Clone the repository.
-2. Navigate to the project folder and install dependencies using `npm install`.
-3. Create a `.env` file in the root directory and set your MongoDB URI as `MONGODB_URI`.
-4. Run the development server with `npm start`.
+2. Navigate to both the `server` and `client` folder and run `npm install` in each.
+3. Create a `.env` file in the 'server/src' directory and and set your MongoDB URI as `MONGODB_URI`.
+4. To run the project, navigate to the `client` folder and execute `npm start`, and in the `server/src` folder, run `node index.js`.
+
+## Demo
+
+![rainify-gif](https://github.com/farukkurtic/rainify/assets/34779712/06b66f35-dc03-4116-8717-a124eefc9760)
 
 ## Future Plans
 
 Rainify has an exciting future ahead! Here are some of the planned developments for the app:
 
-- **Mobile App Expansion:** We are actively working on bringing Rainify to your pocket! Our plan is to develop native mobile apps for both iOS and Android platforms using Flutter. This will enable users to access their favorite rain sounds on-the-go and enjoy relaxation wherever they are.
+- **Mobile App Expansion:** I am actively working on bringing Rainify to your pocket! The plan is to develop native mobile apps for both iOS and Android platforms using Flutter. This will enable users to access their favorite rain sounds on-the-go and enjoy relaxation wherever they are.
 
 - **Enhanced Sound Library:** We are committed to continuously expanding our collection of rain sounds to provide users with even more options. Expect to discover new and captivating rain soundscapes to suit your various moods and preferences.
 
