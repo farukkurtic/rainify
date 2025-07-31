@@ -181,16 +181,8 @@ body {
   margin: 10px 15px;
 }
 
-
-/* responsive */
-
-/* ---------------------------------------------------------------------------- */
-
-/* laptops */
-
 @media (min-width: 1280px) and (max-width: 1680px) {
   
-
   .audio-player {
     width: 30%;
   }
@@ -203,10 +195,6 @@ body {
     margin-bottom: 100px;
   }
 }
-
-
-
-/* regular phones */
 
 @media (max-width: 576px) {
 
@@ -273,8 +261,6 @@ body {
 
 }
 
-/* smaller phones */
-
 @media (max-width: 375px) {
 
   body {
@@ -295,8 +281,6 @@ body {
   }
 
 }
-
-/* regular tablets */
 
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -323,11 +307,5 @@ body {
   .audio-player {
     width: 40%
   }
-}
-
-/* landscape mode */
-
-@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  
 }
 
